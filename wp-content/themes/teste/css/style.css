@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+.logo {
+  width: 201px;
+  height: 68px;
+  float: left;
+  padding-top: 1em; 
+}
+
+/* Banner Principal */
+section.banner {
+  background: url("../images/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 578px;
+  text-align: center;
+  color: white; 
+}
+section.banner h1 {
+  color: white;
+  font-size: 3em;
+  padding-top: 2em;
+  margin-top: 0; 
+}
+section.banner p {
+  line-height: 1.2em; 
+}
+section.banner .envia {
+  padding: 3em 0em; 
+}
+section.banner input {
+  width: 25em;
+  padding: 1.1em 2em 1em 2em;
+  margin-right: -.3em;
+  border: 0; 
+}
+section.banner input::placeholder {
+  color: #b21e37;
+  font-style: italic;
+}
+
+/* Botão de Scroll */
+.scroll-down {
+  background-color: white;
+  position: relative;
+  top: 1em;
+  left: 50%;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  display: block;
+  z-index: 10;
+  text-align: center; 
+}
+.scroll-down .fa {
+  color: #b21e37;
+  margin-top: .2em; 
+}
+
+/* Section Cinza */
+section.cinza {
+  background-color: #282727;
+  padding: 4em 0em;
+  margin-bottom: 4em;
+  color: white; 
+}
+section.cinza h2 {
+  color: white; 
+}
+
+/* Botão */
+.btn {
+  color: white;
+  background-color: #b21e37;
+  padding: .8em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700; 
+}
+.btn:hover {
+  background-color: #8a162a;
+  transition: .3s; 
+}
+.fa-icon {
+  padding-right: .2em;
+  vertical-align: sub; 
+}
+
+/* Section Rosa */
+section.rosa {
+  background: url("../images/bg-institucional.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 434px;
+  color: white; 
+}
+section.rosa h2 {
+  color: white; 
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: white;
+  padding-bottom: 1.3em; 
+}
+footer h3 {
+  font-weight: 400;
+  text-transform: uppercase; 
+}
+footer p {
+  line-height: 1.2em;
+  font-size: 0.9em; 
+}
+footer .copyright {
+  padding-top: 3em;
+  padding-bottom: 1em; 
+}
+footer .fa {
+  color: #b21e37; 
+}
+footer .midias .fa {
+  float: left;
+  margin: 0;
+  color: white;
+  margin: 0;
+  width: 1.5em;
+  height: 1em;
+  border: solid 1px white;
+  padding: 5px;
+  text-align: center; 
+}
+footer .midias .fa:hover {
+  color: #333;
+  border: solid 1px #333; 
+}
+
+/* Mobile */
+@media only screen and (max-width: 425px) {
+  .logo {
+    margin: auto;
+    float: none; 
+  }
+  .menu {
+    text-align: center;
+    padding-left: 0; 
+  }
+  section.banner {
+    width: auto;
+    height: 510px; 
+  }
+  section.banner h1 {
+    font-size: 2em;
+    padding-top: .3em; 
+  }
+  section.banner input {
+    width: 15em;
+    margin-right: 0;
+    margin-bottom: 1em; 
+  }
+  section.rosa {
+    width: auto;
+    height: 370px; 
+  }
+  .envia .btn {
+    padding: .8em 5.7em; 
+  }
+  footer p {
+    font-size: 0.8em; 
+  }
+  footer .copyright {
+    padding-top: 1em; 
+  } 
+}
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  section.banner {
+    width: auto;
+    height: 510px; 
+  }
+  section.banner h1 {
+    padding-top: .3em; 
+  }
+  section.rosa {
+    width: auto;
+    height: 370px; 
+  } 
+}
+
+/*# sourceMappingURL=style.css.map */

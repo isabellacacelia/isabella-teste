@@ -1,0 +1,155 @@
+// Variáveis
+
+$cor-padrao: #6d6d6d;
+$cor-rosa: #bd123b;
+$cinza-bg: #eaeaea;
+$cinza-borda: #d2d2d2;
+$cor-black: black;
+
+$padding-padrao: 2em 1em;
+
+$font-light: 300;
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-black: 900;
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900');
+
+* {
+	font-family: 'Raleway', sans-serif;
+}
+body {
+	margin: 0;
+	color: $cor-padrao;
+}
+p {
+	font-weight: $font-light;
+    line-height: 2em;
+    margin: 0;
+}
+img {
+	width: 100%;
+	margin: 0;
+	display: block;
+}
+h1, h2 {
+	text-transform: uppercase;
+	font-weight: $font-black;
+}
+small {
+	font-size: 75%;
+}
+ul {
+	margin: 0;
+	padding-top: 3em;
+}
+header {
+	height: 7em;
+}
+header ul li{
+	display: inline-block;
+}
+header ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $cor-black;
+	padding: 0em 1em;
+	font-size: 14px;
+    transition: .3s;
+    &:hover {
+    	color: $cor-rosa;
+    	transition: .3s;
+	}
+}
+.clearfix {
+	display: block;
+    clear: both;
+}
+.container {
+	width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+}
+.txtcenter {
+	text-align: center;
+	margin: 3em 0em;
+}
+.txtleft {
+	text-align: left;
+	margin: 2em 0em; 
+}
+.txtright {
+	text-align: right;
+}
+.grid {
+	padding: 1em 0em;
+	display: table;
+	clear: both;
+	width: 100%;
+}
+.col-4 {
+	width: 33.3%;
+	float: left;
+}
+.col-6 {
+	width: 50%;
+	float: left;
+	&:first-child {
+		padding-top: 3em;
+	}
+}
+section h2 {
+	color: $cor-rosa;
+}
+section h3 {
+	font-weight: $font-semi-bold;
+	text-transform: uppercase;
+}
+@media only screen and (max-width: 425px) {
+	.hide-mobile {
+		display: none;
+	}
+	ul {
+		padding-top: 2em;
+	}
+	header {
+		height: 17em;
+		background-color: $cinza-bg;
+	}
+	header ul li {
+		display: block;
+		padding: .4em 0em;
+		border-bottom: solid $cinza-borda 1px;
+	}
+	section, footer {
+		padding: $padding-padrao;
+	}
+	section.cinza {
+		padding: $padding-padrao;
+		margin-bottom: 0;
+	}
+	.col-4, .col-6 {
+		width: 100%;
+		padding: .5em;
+	}
+	.col-6:first-child {
+		padding-top: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	header {
+		padding: 1em;
+	}
+	header ul li a {
+		padding: 0em .3em;
+    font-size: 12px;
+	}
+	section, footer {
+		padding: $padding-padrao;
+	}
+	section.cinza {
+		padding: $padding-padrao;
+		margin-bottom: 0;
+	}
+}
